@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Config
+
+prefernces: {}
+
+clusters:
+  - cluster:
+    name: dev
+  - cluster:
+    name: prod
+  - cluster:
+    name: test
+users:
+  - name: developer
+  - name: tester
+contexts:
+  - context:
+    name: dev-developer
+  - context:
+    name: dev-tester
+  - context:
+    name: dev-devops
