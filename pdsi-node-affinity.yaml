@@ -11,11 +11,11 @@ spec:
       preferredDuringSchedulingIgnoredDuringExecution:
         - weight: 100
           preference:
-            - matchExpressions:
-                - key: disk
-                  operator: In
-                  values:
-                    - ssd
+            matchExpressions:
+              - key: disk
+                operator: In
+                values:
+                  - ssd
   containers:
     - name: nginx
       image: nginx:alpine
