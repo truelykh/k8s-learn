@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: learn
+  name: nodeselector
+  labels:
+    app: nodeselector
+spec:
+  nodeSelector:
+    node: n1
+  containers:
+    - name: nginx
+      image: nginx:alpine
+---
