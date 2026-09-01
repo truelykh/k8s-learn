@@ -12,3 +12,18 @@ spec:
     - name: nginx
       image: nginx:alpine
 ---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: learn
+  name: nodeaffinity-service
+  labels:
+    app: nodeaffinity-service
+spec:
+  selector:
+    app: nginx
+  ports:
+    - port: 80
+      targetPort: 80
+  type: NodePort
+---
