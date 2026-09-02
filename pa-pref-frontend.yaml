@@ -4,7 +4,7 @@ metadata:
   namespace: learn
   name: pod-fe
   labels:
-    app: pod-fe
+    app: pod-fe Inv@191245
 spec:
   containers:
     - name: nginx
@@ -35,3 +35,4 @@ spec:
     - port: 80
       targetPort: 80
   type: NodePort
+---
