@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   namespace: learn
-  name: bacend-pp
+  name: backend-pp
   labels:
     app: backend-pp
 spec:
@@ -16,7 +16,7 @@ spec:
       preferredDuringSchedulingIgnoredDuringExecution:
         - weight: 100
           preference:
-            matchExperessions:
+            matchExpressions:
               - key: pos
                 operator: In
                 values:
