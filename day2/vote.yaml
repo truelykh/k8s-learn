@@ -1,0 +1,7 @@
+apiVersion: apps/v1
+kind: Pod
+metadata:
+  namespace: test
+  name: test-deploy
+  labels:
+    app:

@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
     - name: nginx
-      image: nginx:alpine
+      image: kubeprojects/frontend:5.0
       ports:
         - containerPort: 80
 ---
